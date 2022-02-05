@@ -1,3 +1,37 @@
+:root {
+  /* Color */
+  --text-black: #212121;
+  --text-white: #fefefe;
+  --text-gray: #a3a5a2;
+  --primary: #fefefe;
+  --secondary: #212121;
+  --accent: #7acae5;
+
+  /* Font size */
+  /* Mobile view */
+  --mobView-1: 2.5rem; /* 40 */
+  --mobView-2: 2rem; /* 32 */
+  --mobView-3: 1.5rem; /* 24 */
+  --mobView-4: 1rem; /* 16 */
+
+  /* Tablet view */
+  --tabView-1: 2.5rem; /* 40 */
+  --tabView-2: 2rem; /* 32 */
+  --tabView-3: 1.5rem; /* 24 */
+  --tabView-4: 1rem; /* 16 */
+
+  /* Desktop view*/
+  --desView-1: 2.5rem; /* 40 */
+  --desView-2: 2rem; /* 32 */
+  --desView-3: 1.5rem; /* 24 */
+  --desView-4: 1rem; /* 16 */
+
+  /* Screen size */
+  --mob-minHeight: 80vh;
+  --tab-minHeight: 85vh;
+  --des-minHeight: 90vh;
+}
+
 * {
   margin: 0;
   padding: 0;
