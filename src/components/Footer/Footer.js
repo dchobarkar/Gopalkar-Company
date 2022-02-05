@@ -10,7 +10,12 @@ const useStyles = makeStyles({ ...FooterCSS });
 function Footer() {
   const classes = useStyles();
 
-  return <div className={classes.root}>Footer</div>;
+  return (
+    <footer className={classes.root}>
+      © Copyright 2022 All Rights Reserved | Website Designed By{" "}
+      <span className={classes.creator}>Darshan Chobarkar</span>
+    </footer>
+  );
 }
 
 export default Footer;
