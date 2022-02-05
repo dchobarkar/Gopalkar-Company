@@ -52,3 +52,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+button {
+  width: 200px;
+  height: 50px;
+  padding: 0.4rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--mobView-3);
+
+  color: var(--text-white);
+  background-color: var(--accent);
+}
