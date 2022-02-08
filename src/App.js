@@ -6,7 +6,7 @@ import Footer from "./components/Footer/Footer";
 import Spinner from "./custom/Spinner/Spinner";
 
 import LandingPage from "./components/LandingPage/LandingPage";
-import Services from "./components/LandingPage/Services/Services";
+import Services from "./components/Services/Services";
 import BlogList from "./components/BlogList/BlogList";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
