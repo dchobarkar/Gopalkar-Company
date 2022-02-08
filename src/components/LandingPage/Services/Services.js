@@ -1,5 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/styles";
+import { Link } from "react-router-dom";
 
 import ServicesCSS from "./Services.css";
 
@@ -59,6 +60,10 @@ function Services() {
           </ul>
         </div>
       </div>
+
+      <Link className={classes.link} to="/services">
+        More Services
+      </Link>
     </div>
   );
 }

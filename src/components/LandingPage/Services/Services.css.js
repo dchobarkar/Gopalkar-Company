@@ -14,6 +14,7 @@ const ServicesCSS = {
   },
 
   serviceContainer: {
+    paddingBottom: "3rem",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
@@ -29,6 +30,21 @@ const ServicesCSS = {
     padding: "1rem 0 0.5rem 0",
     fontSize: "var(--mobView-3)",
     fontFamily: "Liber_Baskerville",
+  },
+
+  link: {
+    width: "200px",
+    height: "50px",
+    padding: "0.4rem",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: "0.5rem",
+    fontFamily: "Montserrat, sans-serif",
+    fontSize: "var(--mobView-3)",
+    textDecoration: "none",
+    color: "var(--text-white)",
+    backgroundColor: "var(--accent)",
   },
 
   /* Tablet view */
