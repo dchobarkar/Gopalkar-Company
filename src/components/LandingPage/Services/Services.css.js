@@ -1,6 +1,7 @@
 const ServicesCSS = {
   root: {
-    height: "75vh",
+    minHeight: "75vh",
+    padding: "0 30px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
