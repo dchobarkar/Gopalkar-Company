@@ -1,21 +1,17 @@
+import { Padding } from "../../css";
+
 const NavbarCSS = {
   root: {
     height: "5rem",
-    padding: "0px 30px",
+    ...Padding,
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    fontFamily: "'Montserrat', sans-serif",
+    borderRadius: "0 0 2px 2px",
+    boxShadow: "0px 1px 10px var(--accent)",
     backgroundColor: "var(--secondary)",
-
-    "& a:link,a:visited": {
-      color: "var(--text-white)",
-      textDecoration: "none",
-    },
   },
-  brand: {
-    fontSize: "var(--mobView-2)",
-  },
+  brand: {},
   menu: {
     width: "100%",
     height: "75vh",
@@ -45,25 +41,8 @@ const NavbarCSS = {
     color: "var(--text-white)",
   },
 
-  /* Tablet view */
-  "@media only screen and (min-width: 401px) and (max-width: 960px)": {
-    root: {
-      padding: "0px 60px",
-    },
-    brand: {
-      fontSize: "var(--tabView-2)",
-    },
-  },
-
   /* Desktop view */
   "@media only screen and (min-width: 961px)": {
-    root: {
-      height: "5rem",
-      padding: "0px 120px",
-    },
-    brand: {
-      fontSize: "var(--desView-2)",
-    },
     menu: {
       height: "5rem",
       position: "static",
