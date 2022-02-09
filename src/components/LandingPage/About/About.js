@@ -12,8 +12,9 @@ function About() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <section className={classes.root}>
       <h2 className={classes.header}>About Us</h2>
+
       <p className={classes.text}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit ac
         elementum suspendisse id fermentum. Dui pharetra vulputate convallis
@@ -46,7 +47,7 @@ function About() {
       <Link className={classes.link} to="/about">
         More
       </Link>
-    </div>
+    </section>
   );
 }
 
