@@ -12,8 +12,17 @@ function Footer() {
 
   return (
     <footer className={classes.root}>
-      © Copyright 2022 All Rights Reserved | Website Designed By{" "}
-      <span className={classes.creator}>Darshan Chobarkar</span>
+      <p>
+        © Copyright 2022 All Rights Reserved | Website Designed By{" "}
+        <a
+          className={classes.creator}
+          href="https://www.linkedin.com/in/dchobarkar/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Darshan Chobarkar
+        </a>
+      </p>
     </footer>
   );
 }
