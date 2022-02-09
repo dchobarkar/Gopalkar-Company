@@ -1,5 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/styles";
+import { Link } from "react-router-dom";
 
 import HeroCSS from "./Hero.css";
 
@@ -11,7 +12,7 @@ function Hero() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <section className={classes.root}>
       <div className={classes.hero}>
         <h1 className={classes.header}>Header</h1>
 
@@ -22,9 +23,13 @@ function Hero() {
           aliquet velit. At tristique luctus id urna, in eu ante.
         </p>
 
-        <button className={classes.button}>Hire Us</button>
+        <div>
+          <Link className={classes.link} to="/contact">
+            Hire Us
+          </Link>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 

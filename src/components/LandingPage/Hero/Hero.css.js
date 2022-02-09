@@ -1,69 +1,64 @@
+import { Lib40, Link, Padding, SectionHeight } from "../../../css";
+import Image from "../../../assets/img/gopalkar-and-company-office.jpg";
+
 const HeroCSS = {
   root: {
-    minHeight: "75vh",
-    padding: "0 30px",
+    ...SectionHeight,
+    ...Padding,
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    color: "var(--text-white)",
+    backgroundImage: `url(${Image})`,
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
   },
-
   hero: {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
   },
-
   header: {
-    fontSize: "var(--mobView-1)",
-    fontFamily: "Libre_Baskerville",
+    ...Lib40,
   },
-
   text: {
-    padding: "1rem 0",
-    fontSize: "var(--mobView-4)",
-    fontFamily: "Lato,sans-serif",
+    padding: "3rem 0 2rem 0",
+  },
+  link: {
+    ...Link,
   },
 
   /* Tablet view */
   "@media only screen and (min-width: 401px) and (max-width: 960px)": {
     root: {
-      padding: "0 60px",
       justifyContent: "flex-start",
     },
-
     hero: {
-      flexDirection: "column",
       alignItems: "flex-start",
-    },
-
-    header: {
-      fontSize: "var(--tabView-1)",
-    },
-
-    text: {
-      fontSize: "var(--tabView-4)",
+      "& div": {
+        width: "100%",
+        display: "flex",
+        justifyContent: "flex-end",
+        alignItems: "center",
+      },
     },
   },
 
   /* Desktop view */
   "@media only screen and (min-width: 961px)": {
     root: {
-      padding: "0px 120px",
       justifyContent: "flex-start",
     },
-
     hero: {
       width: "40vw",
-      flexDirection: "column",
       alignItems: "flex-start",
-    },
-
-    header: {
-      fontSize: "var(--desView-1)",
-    },
-
-    text: {
-      fontSize: "var(--desView-4)",
+      "& div": {
+        width: "100%",
+        display: "flex",
+        justifyContent: "flex-end",
+        alignItems: "center",
+      },
     },
   },
 };
