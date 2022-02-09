@@ -12,12 +12,12 @@ function Services() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <section className={classes.root}>
       <h2 className={classes.header}>Services</h2>
 
-      <div className={classes.serviceContainer}>
-        <div className={classes.serviceList}>
-          <h3 className={classes.subHeader}>Service 1</h3>
+      <div className={classes.container}>
+        <div className={classes.list}>
+          <h3>Service 1</h3>
 
           <ul>
             <li>Sub - service 1</li>
@@ -27,8 +27,8 @@ function Services() {
           </ul>
         </div>
 
-        <div className={classes.serviceList}>
-          <h3 className={classes.subHeader}>Service 2</h3>
+        <div className={classes.list}>
+          <h3>Service 2</h3>
 
           <ul>
             <li>Sub - service 1</li>
@@ -38,8 +38,8 @@ function Services() {
           </ul>
         </div>
 
-        <div className={classes.serviceList}>
-          <h3 className={classes.subHeader}>Service 3</h3>
+        <div className={classes.list}>
+          <h3>Service 3</h3>
 
           <ul>
             <li>Sub - service 1</li>
@@ -49,8 +49,8 @@ function Services() {
           </ul>
         </div>
 
-        <div className={classes.serviceList}>
-          <h3 className={classes.subHeader}>Service 4</h3>
+        <div className={classes.list}>
+          <h3>Service 4</h3>
 
           <ul>
             <li>Sub - service 1</li>
@@ -64,7 +64,7 @@ function Services() {
       <Link className={classes.link} to="/services">
         More Services
       </Link>
-    </div>
+    </section>
   );
 }
 
