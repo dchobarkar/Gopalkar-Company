@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/styles";
 import { Link } from "react-router-dom";
 
+import Image1 from "../../assets/img/gopalkar-and-company-article.png";
 import BlogListCSS from "./BlogList.css";
 
 // CSS
@@ -13,10 +14,16 @@ function BlogList() {
 
   return (
     <div className={classes.root}>
-      <div className={classes.container}>
+      <section className={classes.container}>
         <h2 className={classes.header}>Header</h2>
 
         <div className={classes.info}>
+          <img
+            className={classes.image}
+            alt="gopalkar-and-company-testinomial1"
+            src={Image1}
+          />
+
           <p>by Darshan Chobarkar | 20 Sept. 2021</p>
         </div>
 
@@ -28,15 +35,22 @@ function BlogList() {
           proin donec placerat ut. Id orci vitae elementum id ut. Praesent in
           elit viverra porttitor odio ornare consectetur egestas quis. Morbi.
         </p>
+
         <Link className={classes.link} to="/blog">
           Read More
         </Link>
-      </div>
+      </section>
 
-      <div className={classes.container}>
+      <section className={classes.container}>
         <h2 className={classes.header}>Header</h2>
 
         <div className={classes.info}>
+          <img
+            className={classes.image}
+            alt="gopalkar-and-company-testinomial1"
+            src={Image1}
+          />
+
           <p>by Darshan Chobarkar | 20 Sept. 2021</p>
         </div>
 
@@ -48,15 +62,22 @@ function BlogList() {
           proin donec placerat ut. Id orci vitae elementum id ut. Praesent in
           elit viverra porttitor odio ornare consectetur egestas quis. Morbi.
         </p>
+
         <Link className={classes.link} to="/blog">
           Read More
         </Link>
-      </div>
+      </section>
 
-      <div className={classes.container}>
+      <section className={classes.container}>
         <h2 className={classes.header}>Header</h2>
 
         <div className={classes.info}>
+          <img
+            className={classes.image}
+            alt="gopalkar-and-company-testinomial1"
+            src={Image1}
+          />
+
           <p>by Darshan Chobarkar | 20 Sept. 2021</p>
         </div>
 
@@ -68,14 +89,22 @@ function BlogList() {
           proin donec placerat ut. Id orci vitae elementum id ut. Praesent in
           elit viverra porttitor odio ornare consectetur egestas quis. Morbi.
         </p>
+
         <Link className={classes.link} to="/blog">
           Read More
         </Link>
-      </div>
-      <div className={classes.container}>
+      </section>
+
+      <section className={classes.container}>
         <h2 className={classes.header}>Header</h2>
 
         <div className={classes.info}>
+          <img
+            className={classes.image}
+            alt="gopalkar-and-company-testinomial1"
+            src={Image1}
+          />
+
           <p>by Darshan Chobarkar | 20 Sept. 2021</p>
         </div>
 
@@ -88,10 +117,10 @@ function BlogList() {
           elit viverra porttitor odio ornare consectetur egestas quis. Morbi.
         </p>
 
-        <div className={classes.link}>
-          <Link to="/blog">Read More</Link>
-        </div>
-      </div>
+        <Link className={classes.link} to="/blog">
+          Read More
+        </Link>
+      </section>
     </div>
   );
 }
