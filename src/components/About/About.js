@@ -13,12 +13,7 @@ function About() {
   return (
     <React.Fragment>
       <div className={classes.root}>
-        <div className={classes.image}>
-          <img
-            alt="Darshan"
-            src="https://media-exp1.licdn.com/dms/image/C4E03AQGtWm6DYqL8dg/profile-displayphoto-shrink_100_100/0/1608177914950?e=1649894400&v=beta&t=K5D8UVR12aZTjWBd21QFcXIzr1Vh3elV3XNAJEjEodw"
-          />
-        </div>
+        <div className={classes.image}></div>
 
         <div className={classes.container}>
           <h2 className={classes.header}>Value 1</h2>
@@ -38,7 +33,7 @@ function About() {
             at nunc. Pretium tristique quisque a dui commodo tempor eget.
           </p>
 
-          <h2 className={classes.header}>Value 1</h2>
+          <h2 className={classes.header}>Value 2</h2>
 
           <p className={classes.text}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est nisi,
@@ -55,24 +50,6 @@ function About() {
             at nunc. Pretium tristique quisque a dui commodo tempor eget.
           </p>
         </div>
-      </div>
-
-      <div className={classes.mapBox}>
-        <div className={classes.information}>
-          <p>Mobile No. : 9404168827</p>
-          <p>Email : dchobarkar@gmail.com</p>
-          <p>
-            Address : "Sudarshan", Dindayal Colony, <br />
-            Mandva Road,
-            <br />
-            Ambajogai 431517
-          </p>
-
-          <p>LinkedIn</p>
-          <p>Email</p>
-        </div>
-
-        <div className={classes.map}></div>
       </div>
     </React.Fragment>
   );
