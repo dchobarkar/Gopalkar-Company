@@ -19,7 +19,7 @@ function Services() {
         <Link to="/contact">Hire Us</Link>
       </div>
 
-      <div className={classes.container}>
+      <section className={classes.container}>
         <h2>Service 1</h2>
 
         <div>
@@ -43,6 +43,7 @@ function Services() {
             <div>
               <div>
                 <h3>Sub service 1</h3>
+
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Ornare auctor id aenean semper etiam nisl, metus, eu mauris.
@@ -53,6 +54,7 @@ function Services() {
 
               <div>
                 <h3>Sub service 2</h3>
+
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Ornare auctor id aenean semper etiam nisl, metus, eu mauris.
@@ -65,6 +67,7 @@ function Services() {
             <div>
               <div>
                 <h3>Sub service 3</h3>
+
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Ornare auctor id aenean semper etiam nisl, metus, eu mauris.
@@ -75,6 +78,7 @@ function Services() {
 
               <div>
                 <h3>Sub service 4</h3>
+
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Ornare auctor id aenean semper etiam nisl, metus, eu mauris.
@@ -85,9 +89,9 @@ function Services() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className={classes.container}>
+      <section className={classes.container}>
         <h2>Service 2</h2>
 
         <div>
@@ -111,6 +115,7 @@ function Services() {
             <div>
               <div>
                 <h3>Sub service 1</h3>
+
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Ornare auctor id aenean semper etiam nisl, metus, eu mauris.
@@ -121,6 +126,7 @@ function Services() {
 
               <div>
                 <h3>Sub service 2</h3>
+
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Ornare auctor id aenean semper etiam nisl, metus, eu mauris.
@@ -133,6 +139,7 @@ function Services() {
             <div>
               <div>
                 <h3>Sub service 3</h3>
+
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Ornare auctor id aenean semper etiam nisl, metus, eu mauris.
@@ -143,6 +150,7 @@ function Services() {
 
               <div>
                 <h3>Sub service 4</h3>
+
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Ornare auctor id aenean semper etiam nisl, metus, eu mauris.
@@ -153,9 +161,9 @@ function Services() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className={classes.container}>
+      <section className={classes.container}>
         <h2>Service 3</h2>
 
         <div>
@@ -179,6 +187,7 @@ function Services() {
             <div>
               <div>
                 <h3>Sub service 1</h3>
+
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Ornare auctor id aenean semper etiam nisl, metus, eu mauris.
@@ -189,6 +198,7 @@ function Services() {
 
               <div>
                 <h3>Sub service 2</h3>
+
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Ornare auctor id aenean semper etiam nisl, metus, eu mauris.
@@ -201,6 +211,7 @@ function Services() {
             <div>
               <div>
                 <h3>Sub service 3</h3>
+
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Ornare auctor id aenean semper etiam nisl, metus, eu mauris.
@@ -211,6 +222,7 @@ function Services() {
 
               <div>
                 <h3>Sub service 4</h3>
+
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Ornare auctor id aenean semper etiam nisl, metus, eu mauris.
@@ -221,7 +233,7 @@ function Services() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }
