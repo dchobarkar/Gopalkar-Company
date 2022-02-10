@@ -1,62 +1,110 @@
-const ContactCSS = {
-  root: {},
-  mapBox: {
-    padding: "1rem 30px",
-    display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "center",
-    alignItems: "center",
-  },
+import { Lib24, Mont16, Padding, SectionHeight } from "../../css";
 
-  information: {
-    width: "100%",
+const ContactCSS = {
+  root: {
+    ...SectionHeight,
+    ...Padding,
+    paddingTop: "2rem",
+    paddingBottom: "2rem",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    alignItems: "flex-start",
-    fontSize: "var(--mobView-4)",
-    fontFamily: "Lato,sans-serif",
+    alignItems: "center",
   },
-
-  map: {
+  text: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    "& h2": { ...Lib24 },
+    "& p": {
+      paddingTop: "2rem",
+    },
+  },
+  mediaIcons: {
     width: "100%",
+    padding: "1rem 0 2rem 0",
+    display: "flex",
+    justifyContent: "space-around",
+    alignItems: "center",
+
+    "& img": {
+      height: "2rem",
+      width: "2rem",
+    },
+  },
+  form: {
+    minHeight: "50vh",
+    padding: "2rem 0",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-around",
+    alignItems: "center",
+    ...Mont16,
+    "& input,input:focus,textarea": {
+      width: "100%",
+      margin: "0.5rem 0",
+      padding: "0.2rem",
+      outline: "none",
+      border: "none",
+      borderBottom: "1px solid var(--text-gray)",
+    },
+    "& label": {
+      width: "100%",
+      padding: "0.5rem 0",
+    },
+    "& div": {
+      width: "100%",
+      display: "flex",
+      justifyContent: "center",
+    },
   },
 
   /* Tablet view */
   "@media only screen and (min-width: 401px) and (max-width: 960px)": {
     root: {
-      padding: "1rem 60px",
+      paddingTop: "4rem",
+      paddingBottom: "2rem",
     },
-
-    mapBox: {
-      padding: "1rem 60px",
+    text: {
+      "& p": {
+        width: "80%",
+      },
     },
-
-    information: {
-      fontSize: "var(--tabView-4)",
-    },
-
-    map: {
-      width: "100%",
+    form: {
+      width: "80%",
+      padding: "4rem 0",
+      "& input,input:focus,textarea": {
+        margin: "1rem 0",
+        padding: "0.4rem",
+      },
+      "& div": {
+        justifyContent: "flex-end",
+      },
     },
   },
 
   /* Desktop view */
   "@media only screen and (min-width: 961px)": {
     root: {
-      padding: "1rem 120px",
+      paddingTop: "6rem",
+      paddingBottom: "2rem",
     },
-
-    mapBox: {
-      padding: "1rem 120px",
+    text: {
+      "& p": {
+        width: "60%",
+      },
     },
-
-    information: {
-      fontSize: "var(--desView-4)",
-    },
-
-    map: {
-      width: "100%",
+    form: {
+      width: "40%",
+      padding: "6rem 0",
+      "& input,input:focus,textarea": {
+        margin: "1rem 0",
+        padding: "0.4rem",
+      },
+      "& div": {
+        justifyContent: "flex-end",
+      },
     },
   },
 };

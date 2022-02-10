@@ -1,6 +1,9 @@
 import React from "react";
 import { makeStyles } from "@material-ui/styles";
 
+import Icon1 from "../../assets/img/icon-linkedin.png";
+import Icon2 from "../../assets/img/icon-gmail.png";
+import ContactSection from "../LandingPage/Contact/Contact";
 import ContactCSS from "./Contact.css";
 
 // CSS
@@ -12,8 +15,9 @@ function Contact() {
 
   return (
     <div className={classes.root}>
-      <div>
+      <div className={classes.text}>
         <h2>Some Cool Heading</h2>
+
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing a,
           eleifend consequat nunc et ullamcorper luctus nisi quis. Platea ac
@@ -28,38 +32,38 @@ function Contact() {
           montes, nulla. In bibendum vestibulum in morbi id. Tristique et tortor
           fermentum aliquet adipiscing.
         </p>
+
+        <div className={classes.mediaIcons}>
+          <a
+            href="https://in.linkedin.com/in/ca-chetan-gopalkar-62456066"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img alt="gopalkar-and-company-linkedin" src={Icon1} />
+          </a>
+
+          <a href="mailto: gopalkar.ca@gmail.com">
+            <img alt="gopalkar-and-company-email" src={Icon2} />
+          </a>
+        </div>
       </div>
 
-      <form>
-        <label for="name">Name :</label>
-        <input id="name" type="text" name="name" />
+      <form className={classes.form}>
+        <label htmlFor="name">Name :</label>
+        <input id="name" type="text" name="name" placeholder="Name" />
 
-        <label for="email">Email :</label>
-        <input id="email" type="email" name="email" />
+        <label htmlFor="email">Email :</label>
+        <input id="email" type="email" name="email" placeholder="Email" />
 
-        <label for="message">Message :</label>
-        <input id="message" type="text" name="message" />
+        <label htmlFor="message">Message :</label>
+        <textarea id="message" name="message" rows="5" placeholder="Message" />
 
-        <button type="submit">Send</button>
+        <div>
+          <button type="submit">Send</button>
+        </div>
       </form>
 
-      <div className={classes.mapBox}>
-        <div className={classes.information}>
-          <p>Mobile No. : 9404168827</p>
-          <p>Email : dchobarkar@gmail.com</p>
-          <p>
-            Address : "Sudarshan", Dindayal Colony, <br />
-            Mandva Road,
-            <br />
-            Ambajogai 431517
-          </p>
-
-          <p>LinkedIn</p>
-          <p>Email</p>
-        </div>
-
-        <div className={classes.map}></div>
-      </div>
+      <ContactSection />
     </div>
   );
 }
