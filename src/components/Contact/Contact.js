@@ -48,15 +48,31 @@ function Contact() {
         </div>
       </div>
 
-      <form className={classes.form}>
+      <form
+        className={classes.form}
+        action="https://formspree.io/f/xzborpzd"
+        method="POST"
+      >
         <label htmlFor="name">Name :</label>
-        <input id="name" type="text" name="name" placeholder="Name" />
+        <input id="name" type="text" name="name" placeholder="Name" required />
 
         <label htmlFor="email">Email :</label>
-        <input id="email" type="email" name="email" placeholder="Email" />
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
 
         <label htmlFor="message">Message :</label>
-        <textarea id="message" name="message" rows="5" placeholder="Message" />
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Message"
+          required
+        />
 
         <div>
           <button type="submit">Send</button>
