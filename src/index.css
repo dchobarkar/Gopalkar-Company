@@ -10,26 +10,21 @@
   /* Font size */
   /* Mobile view */
   --mobView-1: 2.5rem; /* 40 */
-  --mobView-2: 2rem; /* 32 */
-  --mobView-3: 1.5rem; /* 24 */
-  --mobView-4: 1rem; /* 16 */
+  --mobView-2: 1.8rem; /* 32 */
+  --mobView-3: 1.2rem; /* 24 */
+  --mobView-4: 0.8rem; /* 16 */
 
   /* Tablet view */
   --tabView-1: 2.5rem; /* 40 */
   --tabView-2: 2rem; /* 32 */
-  --tabView-3: 1.5rem; /* 24 */
-  --tabView-4: 1rem; /* 16 */
+  --tabView-3: 1.2rem; /* 24 */
+  --tabView-4: 0.8rem; /* 16 */
 
   /* Desktop view*/
   --desView-1: 2.5rem; /* 40 */
   --desView-2: 2rem; /* 32 */
-  --desView-3: 1.5rem; /* 24 */
-  --desView-4: 1rem; /* 16 */
-
-  /* Screen size */
-  --mob-minHeight: 80vh;
-  --tab-minHeight: 85vh;
-  --des-minHeight: 90vh;
+  --desView-3: 1.2rem; /* 24 */
+  --desView-4: 0.8rem; /* 16 */
 }
 
 * {
@@ -45,7 +40,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-size: var(--mobView-4);
+  color: var(--text-black);
+  background-color: var(--primary);
 }
 
 code {
@@ -61,7 +59,28 @@ button {
   border-radius: 0.5rem;
   font-family: "Montserrat", sans-serif;
   font-size: var(--mobView-3);
-
   color: var(--text-white);
   background-color: var(--accent);
+}
+
+/* Tablet view */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    font-size: var(--tabView-4);
+  }
+
+  button {
+    font-size: var(--tabView-3);
+  }
+}
+
+/* Desktop view */
+@media only screen and (min-width: 961px) {
+  body {
+    font-size: var(--desView-4);
+  }
+
+  button {
+    font-size: var(--desView-3);
+  }
 }
