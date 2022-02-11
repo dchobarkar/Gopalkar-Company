@@ -1,4 +1,4 @@
-import { Lib24, Mont16, Padding, SectionHeight } from "../../css";
+import { Lib32, Mont16, Padding, SectionHeight } from "../../css";
 
 const ContactCSS = {
   root: {
@@ -16,7 +16,7 @@ const ContactCSS = {
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    "& h2": { ...Lib24 },
+    "& h2": { ...Lib32 },
     "& p": {
       paddingTop: "2rem",
     },

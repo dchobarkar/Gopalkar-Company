@@ -1,4 +1,4 @@
-import { Lib40, Mont16, Padding, SectionHeight } from "../../css";
+import { Lib32, Mont16, Padding, SectionHeight } from "../../css";
 
 const BlogListCSS = {
   root: {
@@ -19,7 +19,7 @@ const BlogListCSS = {
     alignItems: "flex-start",
     borderBottom: "1px solid var(--text-black)",
   },
-  header: { ...Lib40 },
+  header: { ...Lib32 },
   info: {
     padding: "0.5rem 0",
     display: "flex",

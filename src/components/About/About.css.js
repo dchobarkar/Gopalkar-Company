@@ -1,4 +1,4 @@
-import { Lib24, Padding, SectionHeight } from "../../css";
+import { Lib32, Padding, SectionHeight } from "../../css";
 import Image from "../../assets/img/gopalkar-and-company-about.jpg";
 
 const AboutCSS = {
@@ -28,7 +28,7 @@ const AboutCSS = {
   },
   header: {
     padding: "1rem 0",
-    ...Lib24,
+    ...Lib32,
     color: "var(--accent)",
   },
   text: {
