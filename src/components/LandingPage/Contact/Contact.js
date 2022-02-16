@@ -1,11 +1,10 @@
 import React from "react";
 import { makeStyles } from "@material-ui/styles";
 
-import Icon1 from "../../../assets/img/icon-mobile.png";
-import Icon2 from "../../../assets/img/icon-email.png";
-import Icon3 from "../../../assets/img/icon-address.png";
-import Icon4 from "../../../assets/img/icon-linkedin.png";
-import Icon5 from "../../../assets/img/icon-gmail.png";
+import { ReactComponent as EmailIcon } from "../../../assets/svg/email.svg";
+import { ReactComponent as LinkedInIcon } from "../../../assets/svg/linkedin.svg";
+import { ReactComponent as LocationIcon } from "../../../assets/svg/location.svg";
+import { ReactComponent as WhatsappIcon } from "../../../assets/svg/whatsapp.svg";
 import ContactCSS from "./Contact.css";
 
 // CSS
@@ -23,32 +22,20 @@ function Contact() {
         <div>
           <div className={classes.address}>
             <div>
-              <img
-                className={classes.image}
-                alt="gopalkar-and-company-mobile"
-                src={Icon1}
-              />
+              <WhatsappIcon className={classes.image} />
 
               <p className={classes.text}>9421061989</p>
             </div>
 
             <div>
-              <img
-                className={classes.image}
-                alt="gopalkar-and-company-email"
-                src={Icon2}
-              />
+              <EmailIcon className={classes.image} />
 
               <p className={classes.text}>gopalkar.ca@gmail.com</p>
             </div>
 
             <div>
               <div>
-                <img
-                  className={classes.image}
-                  alt="gopalkar-and-company-address"
-                  src={Icon3}
-                />
+                <LocationIcon className={classes.image} />
               </div>
 
               <p className={classes.text}>
@@ -64,17 +51,19 @@ function Contact() {
           </div>
 
           <div className={classes.mediaIcons}>
-            <a
-              href="https://in.linkedin.com/in/ca-chetan-gopalkar-62456066"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img alt="gopalkar-and-company-linkedin" src={Icon4} />
-            </a>
+            <div>
+              <a
+                href="https://in.linkedin.com/in/ca-chetan-gopalkar-62456066"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <LinkedInIcon className={classes.image} />
+              </a>
 
-            <a href="mailto: gopalkar.ca@gmail.com">
-              <img alt="gopalkar-and-company-email" src={Icon5} />
-            </a>
+              <a href="mailto: gopalkar.ca@gmail.com">
+                <EmailIcon className={classes.image} />
+              </a>
+            </div>
           </div>
         </div>
 

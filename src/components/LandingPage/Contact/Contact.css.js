@@ -39,20 +39,24 @@ const ContactCSS = {
   image: {
     height: "1.5rem",
     width: "1.5rem",
+    color: "var(--accent)",
   },
   text: {
     paddingLeft: "0.5rem",
     lineHeight: "1.3rem",
   },
   mediaIcons: {
-    padding: "1rem 0",
+    width: "100%",
     display: "flex",
-    justifyContent: "space-around",
+    justifyContent: "center",
     alignItems: "center",
 
-    "& img": {
-      height: "2rem",
-      width: "2rem",
+    "& div": {
+      width: "50%",
+      padding: "1rem 0",
+      display: "flex",
+      justifyContent: "space-around",
+      alignItems: "center",
     },
   },
   map: {
