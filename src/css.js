@@ -122,17 +122,7 @@ export const Padding = {
 };
 
 export const SectionHeight = {
-  minHeight: "75vh",
-
-  /* Tablet view */
-  "@media only screen and (min-width: 401px) and (max-width: 960px)": {
-    minHeight: "80vh",
-  },
-
-  /* Desktop view */
-  "@media only screen and (min-width: 961px)": {
-    minHeight: "85vh",
-  },
+  minHeight: "85vh",
 };
 
 export const Link = {

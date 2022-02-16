@@ -1,5 +1,5 @@
 import { Lib40, Link, Padding, SectionHeight } from "../../../css";
-import Image from "../../../assets/img/gopalkar-and-company-office.jpg";
+import Image from "../../../assets/img/gopalkar-and-company-office.png";
 
 const HeroCSS = {
   root: {
@@ -35,6 +35,7 @@ const HeroCSS = {
       justifyContent: "flex-start",
     },
     hero: {
+      width: "75%",
       alignItems: "flex-start",
       "& div": {
         width: "100%",
