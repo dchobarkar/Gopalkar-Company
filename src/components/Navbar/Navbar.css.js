@@ -2,7 +2,7 @@ import { Padding } from "../../css";
 
 const NavbarCSS = {
   root: {
-    height: "5rem",
+    minHeight: "5rem",
     ...Padding,
     display: "flex",
     justifyContent: "space-between",
@@ -11,7 +11,11 @@ const NavbarCSS = {
     boxShadow: "0px 1px 10px var(--accent)",
     backgroundColor: "var(--secondary)",
   },
-  brand: {},
+  brand: {
+    "& img": {
+      width: "7.5rem",
+    },
+  },
   menu: {
     width: "100%",
     height: "75vh",
@@ -32,8 +36,18 @@ const NavbarCSS = {
     opacity: "1",
     transition: "top 0.7s ease",
   },
-  navbarIcon: {
-    display: "block",
+  mediaIcons: {
+    width: "50vw",
+    paddingTop: "2.5rem",
+    display: "flex",
+    justifyContent: "space-around",
+    alignItems: "center",
+
+    "& svg": {
+      height: "2rem",
+      width: "2rem",
+      color: "var(--accent)",
+    },
   },
   icon: {
     width: "2rem",
@@ -43,12 +57,20 @@ const NavbarCSS = {
 
   /* Desktop view */
   "@media only screen and (min-width: 961px)": {
+    brand: {
+      "& img": {
+        width: "10rem",
+      },
+    },
     menu: {
       height: "5rem",
       position: "static",
       flexDirection: "row",
       justifyContent: "flex-end",
       opacity: "1",
+    },
+    mediaIcons: {
+      display: "none",
     },
     navbarIcon: {
       display: "none",

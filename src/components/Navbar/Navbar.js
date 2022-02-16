@@ -3,8 +3,11 @@ import { makeStyles } from "@material-ui/styles";
 import { Link } from "react-router-dom";
 import clsx from "clsx";
 
-import { ReactComponent as CloseIcon } from "../../assets/svg/Close.svg";
-import { ReactComponent as MenuIcon } from "../../assets/svg/Menu.svg";
+import { ReactComponent as EmailIcon } from "../../assets/svg/email.svg";
+import { ReactComponent as LinkedinIcon } from "../../assets/svg/linkedin.svg";
+import { ReactComponent as CloseIcon } from "../../assets/svg/close.svg";
+import { ReactComponent as MenuIcon } from "../../assets/svg/menu.svg";
+import Logo from "../../assets/img/gopalkar-and-company-logo-white.png";
 import NavLink from "./NavLink/NavLink";
 import NavbarCSS from "./Navbar.css";
 
@@ -28,7 +31,7 @@ function Navbar() {
     <div className={classes.root}>
       <div className={classes.brand}>
         <Link to="/" onClick={closeMobileMenu}>
-          Barbatos
+          <img alt="gopalkar-and-company-logo" src={Logo} />
         </Link>
       </div>
 
@@ -40,6 +43,22 @@ function Navbar() {
         <NavLink to="/about" label="About" onClick={closeMobileMenu} />
 
         <NavLink to="/contact" label="Contact" onClick={closeMobileMenu} />
+
+        <li>
+          <div className={classes.mediaIcons}>
+            <a
+              href="https://in.linkedin.com/in/ca-chetan-gopalkar-62456066"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <LinkedinIcon />
+            </a>
+
+            <a href="mailto: gopalkar.ca@gmail.com">
+              <EmailIcon />
+            </a>
+          </div>
+        </li>
       </ul>
 
       <div className={classes.navbarIcon} onClick={toggleNavbar}>
