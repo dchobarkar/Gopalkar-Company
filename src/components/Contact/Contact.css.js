@@ -28,7 +28,7 @@ const ContactCSS = {
     justifyContent: "space-around",
     alignItems: "center",
 
-    "& img": {
+    "& svg": {
       height: "2rem",
       width: "2rem",
     },
@@ -71,6 +71,9 @@ const ContactCSS = {
         width: "80%",
       },
     },
+    mediaIcons: {
+      width: "50%",
+    },
     form: {
       width: "80%",
       padding: "4rem 0",
@@ -94,6 +97,9 @@ const ContactCSS = {
       "& p": {
         width: "60%",
       },
+    },
+    mediaIcons: {
+      width: "50%",
     },
     form: {
       width: "40%",

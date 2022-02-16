@@ -1,8 +1,8 @@
 import React from "react";
 import { makeStyles } from "@material-ui/styles";
 
-import Icon1 from "../../assets/img/icon-linkedin.png";
-import Icon2 from "../../assets/img/icon-gmail.png";
+import { ReactComponent as EmailIcon } from "../../assets/svg/email.svg";
+import { ReactComponent as LinkedInIcon } from "../../assets/svg/linkedin.svg";
 import ContactSection from "../LandingPage/Contact/Contact";
 import ContactCSS from "./Contact.css";
 
@@ -39,11 +39,11 @@ function Contact() {
             target="_blank"
             rel="noreferrer"
           >
-            <img alt="gopalkar-and-company-linkedin" src={Icon1} />
+            <LinkedInIcon />
           </a>
 
           <a href="mailto: gopalkar.ca@gmail.com">
-            <img alt="gopalkar-and-company-email" src={Icon2} />
+            <EmailIcon />
           </a>
         </div>
       </div>
