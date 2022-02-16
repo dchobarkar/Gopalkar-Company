@@ -61,7 +61,7 @@ const BlogListCSS = {
       paddingBottom: "2rem",
     },
     container: {
-      padding: "2rem 15%",
+      padding: "4rem 15%",
     },
   },
 };

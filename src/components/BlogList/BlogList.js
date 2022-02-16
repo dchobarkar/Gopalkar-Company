@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/styles";
 import { Link } from "react-router-dom";
 
-import Image1 from "../../assets/img/gopalkar-and-company-article.png";
+import Author from "../../assets/img/gopalkar-and-company-chetan.png";
 import BlogListCSS from "./BlogList.css";
 
 // CSS
@@ -21,7 +21,7 @@ function BlogList() {
           <img
             className={classes.image}
             alt="gopalkar-and-company-testinomial1"
-            src={Image1}
+            src={Author}
           />
 
           <p>by Darshan Chobarkar | 20 Sept. 2021</p>
@@ -48,7 +48,7 @@ function BlogList() {
           <img
             className={classes.image}
             alt="gopalkar-and-company-testinomial1"
-            src={Image1}
+            src={Author}
           />
 
           <p>by Darshan Chobarkar | 20 Sept. 2021</p>
@@ -75,7 +75,7 @@ function BlogList() {
           <img
             className={classes.image}
             alt="gopalkar-and-company-testinomial1"
-            src={Image1}
+            src={Author}
           />
 
           <p>by Darshan Chobarkar | 20 Sept. 2021</p>
@@ -102,7 +102,7 @@ function BlogList() {
           <img
             className={classes.image}
             alt="gopalkar-and-company-testinomial1"
-            src={Image1}
+            src={Author}
           />
 
           <p>by Darshan Chobarkar | 20 Sept. 2021</p>
