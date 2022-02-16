@@ -36,6 +36,7 @@ const BlogListCSS = {
   },
   link: {
     width: "100%",
+    marginTop: "1rem",
     display: "flex",
     justifyContent: "flex-end",
     textDecoration: "none",
