@@ -2,6 +2,7 @@
 export const Mont16 = {
   fontFamily: "Montserrat,sans-serif",
   fontSize: "var(--mobView-4)",
+  fontWeight: 300,
 
   /* Tablet view */
   "@media only screen and (min-width: 401px) and (max-width: 960px)": {
@@ -16,6 +17,7 @@ export const Mont16 = {
 export const Mont24 = {
   fontFamily: "Montserrat,sans-serif",
   fontSize: "var(--mobView-3)",
+  fontWeight: 400,
 
   /* Tablet view */
   "@media only screen and (min-width: 401px) and (max-width: 960px)": {
@@ -30,6 +32,7 @@ export const Mont24 = {
 export const Mont32 = {
   fontFamily: "Montserrat,sans-serif",
   fontSize: "var(--mobView-2)",
+  fontWeight: 600,
 
   /* Tablet view */
   "@media only screen and (min-width: 401px) and (max-width: 960px)": {
@@ -46,6 +49,7 @@ export const Mont32 = {
 export const Lib24 = {
   fontFamily: "Libre_Baskerville",
   fontSize: "var(--mobView-3)",
+  fontWeight: 400,
 
   /* Tablet view */
   "@media only screen and (min-width: 401px) and (max-width: 960px)": {
@@ -60,6 +64,7 @@ export const Lib24 = {
 export const Lib32 = {
   fontFamily: "Libre_Baskerville",
   fontSize: "var(--mobView-2)",
+  fontWeight: 700,
 
   /* Tablet view */
   "@media only screen and (min-width: 401px) and (max-width: 960px)": {
@@ -74,6 +79,7 @@ export const Lib32 = {
 export const Lib40 = {
   fontFamily: "Libre_Baskerville",
   fontSize: "var(--mobView-1)",
+  fontWeight: 700,
 
   /* Tablet view */
   "@media only screen and (min-width: 401px) and (max-width: 960px)": {
