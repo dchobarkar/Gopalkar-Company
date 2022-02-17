@@ -1,16 +1,16 @@
-import React, { Suspense } from "react";
+import React, { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Spinner from "./custom/Spinner/Spinner";
 
-import LandingPage from "./components/LandingPage/LandingPage";
-import Services from "./components/Services/Services";
-import BlogList from "./components/BlogList/BlogList";
-import About from "./components/About/About";
-import Contact from "./components/Contact/Contact";
-import NotFound from "./components/NotFound/NotFound";
+const LandingPage = lazy(() => import("./components/LandingPage/LandingPage"));
+const Services = lazy(() => import("./components/Services/Services"));
+const BlogList = lazy(() => import("./components/BlogList/BlogList"));
+const About = lazy(() => import("./components/About/About"));
+const Contact = lazy(() => import("./components/Contact/Contact"));
+const NotFound = lazy(() => import("./components/NotFound/NotFound"));
 
 function App() {
   return (

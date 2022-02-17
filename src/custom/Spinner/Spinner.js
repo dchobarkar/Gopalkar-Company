@@ -1,16 +1,23 @@
 import React from "react";
-import { makeStyles } from "@material-ui/styles";
 
-import SpinnerCSS from "./Spinner.css";
-
-// CSS
-const useStyles = makeStyles({ ...SpinnerCSS });
+import "./Spinner.css";
 
 // Driver component
 function Spinner() {
-  const classes = useStyles();
-
-  return <div className={classes.root}>Spinner</div>;
+  return (
+    <div className="root">
+      <div className="lds-roller">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  );
 }
 
 export default Spinner;
