@@ -35,7 +35,7 @@ const ContactCSS = {
   },
   form: {
     minHeight: "50vh",
-    padding: "2rem 0",
+    padding: "2rem 0 0.5rem 0",
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-around",
@@ -59,6 +59,17 @@ const ContactCSS = {
       justifyContent: "center",
     },
   },
+  response: {
+    display: "none",
+    padding: "0.5rem",
+    border: "1px solid #2DA64D",
+    borderRadius: "0.5rem",
+    fontSize: "0.8rem",
+    textAlign: "center",
+  },
+  open: {
+    display: "block",
+  },
 
   /* Tablet view */
   "@media only screen and (min-width: 401px) and (max-width: 960px)": {
@@ -76,7 +87,7 @@ const ContactCSS = {
     },
     form: {
       width: "80%",
-      padding: "4rem 0",
+      padding: "4rem 0 1rem 0",
       "& input,input:focus,textarea": {
         margin: "1rem 0",
         padding: "0.4rem",
@@ -103,7 +114,7 @@ const ContactCSS = {
     },
     form: {
       width: "40%",
-      padding: "6rem 0",
+      padding: "6rem 0 1rem 0",
       "& input,input:focus,textarea": {
         margin: "1rem 0",
         padding: "0.4rem",

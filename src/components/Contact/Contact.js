@@ -1,5 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/styles";
+import { useForm } from "@formspree/react";
+import clsx from "clsx";
 
 import { ReactComponent as EmailIcon } from "../../assets/svg/email.svg";
 import { ReactComponent as LinkedInIcon } from "../../assets/svg/linkedin.svg";
@@ -12,6 +14,9 @@ const useStyles = makeStyles({ ...ContactCSS });
 // Driver component
 function Contact() {
   const classes = useStyles();
+
+  // Formspree handler
+  const [state, handlerSubmit] = useForm("xzborpzd");
 
   return (
     <div className={classes.root}>
@@ -48,11 +53,7 @@ function Contact() {
         </div>
       </div>
 
-      <form
-        className={classes.form}
-        action="https://formspree.io/f/xzborpzd"
-        method="POST"
-      >
+      <form className={classes.form} onSubmit={handlerSubmit}>
         <label htmlFor="name">Name :</label>
         <input id="name" type="text" name="name" placeholder="Name" required />
 
@@ -75,9 +76,21 @@ function Contact() {
         />
 
         <div>
-          <button type="submit">Send</button>
+          <button type="submit" disabled={state.succeeded}>
+            Send
+          </button>
         </div>
       </form>
+
+      <div
+        className={
+          state.succeeded
+            ? clsx(classes.response, classes.open)
+            : classes.response
+        }
+      >
+        Thank you for your message. We will get back to you soon.
+      </div>
 
       <ContactSection />
     </div>
