@@ -51,11 +51,11 @@ function Navbar() {
               target="_blank"
               rel="noreferrer"
             >
-              <LinkedinIcon />
+              <LinkedinIcon className={classes.mediaIcon} />
             </a>
 
             <a href="mailto: gopalkar.ca@gmail.com">
-              <EmailIcon />
+              <EmailIcon className={classes.mediaIcon} />
             </a>
           </div>
         </li>

@@ -8,7 +8,8 @@ const NavbarCSS = {
     justifyContent: "space-between",
     alignItems: "center",
     borderRadius: "0 0 2px 2px",
-    boxShadow: "0px 1px 10px var(--accent)",
+    boxShadow: "2px 2px 24px var(--accent)",
+
     backgroundColor: "var(--secondary)",
   },
   brand: {
@@ -48,6 +49,14 @@ const NavbarCSS = {
       width: "2rem",
       color: "var(--accent)",
     },
+  },
+  mediaIcon: {
+    height: "2rem",
+    width: "2rem",
+    padding: "0.2rem",
+    borderRadius: "2rem",
+    color: "var(--accent)",
+    border: "1px solid var(--accent-hover)",
   },
   icon: {
     width: "2rem",

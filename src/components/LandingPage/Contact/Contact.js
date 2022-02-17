@@ -22,20 +22,20 @@ function Contact() {
         <div>
           <div className={classes.address}>
             <div>
-              <WhatsappIcon className={classes.image} />
+              <WhatsappIcon className={classes.icon} />
 
               <p className={classes.text}>9421061989</p>
             </div>
 
             <div>
-              <EmailIcon className={classes.image} />
+              <EmailIcon className={classes.icon} />
 
               <p className={classes.text}>gopalkar.ca@gmail.com</p>
             </div>
 
             <div>
               <div>
-                <LocationIcon className={classes.image} />
+                <LocationIcon className={classes.icon} />
               </div>
 
               <p className={classes.text}>
@@ -57,11 +57,11 @@ function Contact() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <LinkedInIcon className={classes.image} />
+                <LinkedInIcon className={classes.mediaIcon} />
               </a>
 
               <a href="mailto: gopalkar.ca@gmail.com">
-                <EmailIcon className={classes.image} />
+                <EmailIcon className={classes.mediaIcon} />
               </a>
             </div>
           </div>

@@ -44,11 +44,11 @@ function Contact() {
             target="_blank"
             rel="noreferrer"
           >
-            <LinkedInIcon />
+            <LinkedInIcon className={classes.mediaIcon} />
           </a>
 
           <a href="mailto: gopalkar.ca@gmail.com">
-            <EmailIcon />
+            <EmailIcon className={classes.mediaIcon} />
           </a>
         </div>
       </div>

@@ -27,10 +27,20 @@ const ContactCSS = {
     display: "flex",
     justifyContent: "space-around",
     alignItems: "center",
-
-    "& svg": {
-      height: "2rem",
-      width: "2rem",
+  },
+  mediaIcon: {
+    height: "2rem",
+    width: "2rem",
+    padding: "0.2rem",
+    borderRadius: "2rem",
+    color: "var(--accent)",
+    border: "1px solid var(--accent-hover)",
+    transition: "all 0.4s",
+    "&:hover": {
+      border: "2px double var(--accent-hover)",
+      opacity: "0.9",
+      transform: "rotate(360deg)",
+      boxShadow: "2px 2px 24px var(--accent)",
     },
   },
   form: {
