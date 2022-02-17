@@ -19,6 +19,11 @@ const FooterCSS = {
   creator: {
     color: "var(--text-white)",
     textDecoration: "none",
+    transform: "all 0.4s",
+    "&:hover": {
+      color: "var(--accent-hover)",
+      transform: "all 0.4s",
+    },
   },
 };
 
