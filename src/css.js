@@ -137,4 +137,11 @@ export const Link = {
   color: "var(--text-white)",
   backgroundColor: "var(--accent)",
   ...Mont24,
+
+  "&:hover": {
+    backgroundColor: "var(--accent-hover)",
+  },
+  "&:active": {
+    backgroundColor: "var(--accent-active)",
+  },
 };

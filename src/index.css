@@ -6,6 +6,8 @@
   --primary: #fefefe;
   --secondary: #212121;
   --accent: #7acae5;
+  --accent-hover: #62a2b7;
+  --accent-active:#497989;
 
   /* Font size */
   /* Mobile view */
@@ -61,6 +63,12 @@ button {
   font-size: var(--mobView-3);
   color: var(--text-white);
   background-color: var(--accent);
+}
+button:hover{
+  background-color: var(--accent-hover);
+}
+button:active{
+  background-color: var(--accent-active);
 }
 
 /* Tablet view */

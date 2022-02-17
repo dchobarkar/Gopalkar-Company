@@ -42,6 +42,13 @@ const BlogListCSS = {
     textDecoration: "none",
     color: "var(--accent)",
     ...Mont16,
+
+    "&:hover": {
+      color: "var(--accent-hover)",
+    },
+    "&:active": {
+      color: "var(--accent-active)",
+    },
   },
 
   /* Tablet view */
