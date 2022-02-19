@@ -1,4 +1,12 @@
-import { Lib24, Lib32, Lib40, Link, Padding, SectionHeight } from "../../css";
+import {
+  Lib24,
+  Lib32,
+  Lib40,
+  Link,
+  Padding,
+  SectionHeight,
+  TextCSS,
+} from "../../css";
 
 const ServicesCSS = {
   root: {
@@ -22,6 +30,7 @@ const ServicesCSS = {
     "& h1": {
       padding: "2rem 0",
       textAlign: "center",
+      letterSpacing: "1px",
       ...Lib40,
     },
     "& a": { ...Link },
@@ -34,12 +43,17 @@ const ServicesCSS = {
     alignItems: "center",
     borderBottom: "1px solid var(--text-black)",
     "& h2": {
-      padding: "1rem",
+      padding: "1rem 0",
       ...Lib32,
+      letterSpacing: "1px",
     },
     "& h3": {
       padding: "1rem 0 0.5rem 0",
       ...Lib24,
+      letterSpacing: "1px",
+    },
+    "& p": {
+      ...TextCSS,
     },
   },
 
@@ -58,7 +72,7 @@ const ServicesCSS = {
         padding: "1rem",
         display: "flex",
         justifyContent: "center",
-        alignItems: "center",
+        alignItems: "flex-start",
         "& div": {
           width: "50%",
           padding: "1rem",
@@ -105,7 +119,7 @@ const ServicesCSS = {
             padding: "1rem 0",
             display: "flex",
             justifyContent: "center",
-            alignItems: "center",
+            alignItems: "flex-start",
             "& div": {
               width: "50%",
               padding: "1rem 1rem 1rem 0",

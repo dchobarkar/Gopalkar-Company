@@ -17,46 +17,46 @@ function Services() {
 
       <div className={classes.container}>
         <div className={classes.list}>
-          <h3>Service 1</h3>
+          <h3>Audit & Assurance</h3>
 
           <ul>
-            <li>Sub - service 1</li>
-            <li>Sub - service 2</li>
-            <li>Sub - service 3</li>
-            <li>Sub - service 4</li>
+            <li>Statutory Audits</li>
+            <li>Compliance</li>
+            <li>Internal Audits</li>
+            <li>Stock Audits</li>
           </ul>
         </div>
 
         <div className={classes.list}>
-          <h3>Service 2</h3>
+          <h3>Business Advisory</h3>
 
           <ul>
-            <li>Sub - service 1</li>
-            <li>Sub - service 2</li>
-            <li>Sub - service 3</li>
-            <li>Sub - service 4</li>
+            <li>Direct & Indirect Taxation</li>
+            <li>GST Transactions</li>
+            <li>Periodic Amendment Updates</li>
+            <li>Statutory Transactions</li>
           </ul>
         </div>
 
         <div className={classes.list}>
-          <h3>Service 3</h3>
+          <h3>Start-up Assistance</h3>
 
           <ul>
-            <li>Sub - service 1</li>
-            <li>Sub - service 2</li>
-            <li>Sub - service 3</li>
-            <li>Sub - service 4</li>
+            <li>Company Registration</li>
+            <li>Project Financing & Fund Raising</li>
+            <li>Devising Internal Procedures</li>
+            <li>Tax, Accounting & Financial Compliance</li>
           </ul>
         </div>
 
         <div className={classes.list}>
-          <h3>Service 4</h3>
+          <h3>Business Process Management Assistance</h3>
 
           <ul>
-            <li>Sub - service 1</li>
-            <li>Sub - service 2</li>
-            <li>Sub - service 3</li>
-            <li>Sub - service 4</li>
+            <li>Virtual CFO Services</li>
+            <li>Books of Accounts</li>
+            <li>MIS Reporting</li>
+            <li>Statutory Compliance</li>
           </ul>
         </div>
       </div>

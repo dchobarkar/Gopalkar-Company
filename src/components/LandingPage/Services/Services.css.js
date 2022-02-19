@@ -1,4 +1,11 @@
-import { Lib24, Lib32, Link, Padding, SectionHeight } from "../../../css";
+import {
+  Lib24,
+  Lib32,
+  Link,
+  Padding,
+  SectionHeight,
+  TextCSS,
+} from "../../../css";
 
 const ServicesCSS = {
   root: {
@@ -11,18 +18,26 @@ const ServicesCSS = {
     justifyContent: "center",
     alignItems: "center",
   },
-  header: { ...Lib32 },
+  header: { ...Lib32, letterSpacing: "1px" },
   container: {
-    padding: "1rem 0",
+    padding: "1.5rem 0",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
   },
   list: {
+    textAlign: "center",
     "& h3": {
       padding: "1rem 0 0.5rem 0",
       ...Lib24,
+      letterSpacing: "1px",
+    },
+    "& ul": {
+      "& li": {
+        ...TextCSS,
+        listStyleType: "none",
+      },
     },
   },
   link: { ...Link },
@@ -36,10 +51,13 @@ const ServicesCSS = {
     },
     container: {
       width: "100%",
+      flexWrap: "wrap",
       flexDirection: "row",
-      justifyContent: "space-between",
     },
-    list: {},
+    list: {
+      minWidth: "300px",
+      padding: "2rem",
+    },
   },
 
   /* Desktop view */
@@ -51,10 +69,13 @@ const ServicesCSS = {
     },
     container: {
       width: "100%",
+      flexWrap: "wrap",
       flexDirection: "row",
-      justifyContent: "space-between",
     },
-    list: {},
+    list: {
+      minWidth: "300px",
+      padding: "2rem",
+    },
   },
 };
 

@@ -21,21 +21,12 @@ function Contact() {
   return (
     <div className={classes.root}>
       <div className={classes.text}>
-        <h2>Some Cool Heading</h2>
+        <h2>Gopalkar & Company Help Desk</h2>
 
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing a,
-          eleifend consequat nunc et ullamcorper luctus nisi quis. Platea ac
-          egestas integer ipsum eget tempus commodo. Sapien, vitae integer
-          porttitor elit tempus. Urna ut vulputate morbi proin consequat.
-          Maecenas risus orci lectus sit lorem id. Sit in commodo natoque eu.
-          Viverra sit imperdiet vulputate suspendisse nec gravida tempor id dui.
-          Hendrerit imperdiet dui adipiscing tellus proin ullamcorper leo a. Sed
-          volutpat morbi nullam lectus. Bibendum feugiat ipsum tincidunt sed
-          amet, ridiculus nec. Dui, nunc nibh elit elementum tristique pulvinar
-          felis, lacus. Gravida cursus amet vitae felis habitant adipiscing
-          montes, nulla. In bibendum vestibulum in morbi id. Tristique et tortor
-          fermentum aliquet adipiscing.
+          If you have any questions or concerns, a member of staff would be
+          pleased to assist you. Please contact us by phone or email, and we
+          will get back to you as soon as possible.
         </p>
 
         <div className={classes.mediaIcons}>

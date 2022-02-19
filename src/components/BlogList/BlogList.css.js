@@ -1,4 +1,4 @@
-import { Lib32, Mont16, Padding, SectionHeight } from "../../css";
+import { Lib32, Mont16, Padding, SectionHeight, TextCSS } from "../../css";
 
 const BlogListCSS = {
   root: {
@@ -19,12 +19,13 @@ const BlogListCSS = {
     alignItems: "flex-start",
     borderBottom: "1px solid var(--text-black)",
   },
-  header: { ...Lib32 },
+  header: { ...Lib32, letterSpacing: "1px" },
   info: {
     padding: "0.5rem 0",
     display: "flex",
     alignItems: "center",
     ...Mont16,
+    ...TextCSS,
     color: "var(--text-gray)",
     "& p": {
       paddingLeft: "1rem",

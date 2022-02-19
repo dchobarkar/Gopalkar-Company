@@ -1,4 +1,4 @@
-import { Lib40, Link, Padding, SectionHeight } from "../../../css";
+import { Lib40, Link, Padding, SectionHeight, TextCSS } from "../../../css";
 import Image from "../../../assets/img/gopalkar-and-company-office.png";
 
 const HeroCSS = {
@@ -21,9 +21,12 @@ const HeroCSS = {
   },
   header: {
     ...Lib40,
+    textAlign: "center",
+    letterSpacing: "1px",
   },
   text: {
     padding: "3rem 0 2rem 0",
+    ...TextCSS,
   },
   link: {
     ...Link,
@@ -44,6 +47,9 @@ const HeroCSS = {
         alignItems: "center",
       },
     },
+    header: {
+      textAlign: "left",
+    },
   },
 
   /* Desktop view */
@@ -60,6 +66,9 @@ const HeroCSS = {
         justifyContent: "flex-end",
         alignItems: "center",
       },
+    },
+    header: {
+      textAlign: "left",
     },
   },
 };

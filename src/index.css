@@ -63,6 +63,7 @@ button {
   font-size: var(--mobView-3);
   color: var(--text-white);
   background-color: var(--accent);
+  letter-spacing: 1px;
 }
 button:hover{
   background-color: var(--accent-hover);

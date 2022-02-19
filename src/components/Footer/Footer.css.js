@@ -1,4 +1,4 @@
-import { Mont16, Padding } from "../../css";
+import { Mont16, Padding, TextCSS } from "../../css";
 
 const FooterCSS = {
   root: {
@@ -10,8 +10,8 @@ const FooterCSS = {
     justifyContent: "center",
     alignItems: "center",
     textAlign: "center",
-    lineHeight: "1.3rem",
     ...Mont16,
+    ...TextCSS,
     color: "var(--text-gray)",
     backgroundColor: "var(--secondary)",
   },

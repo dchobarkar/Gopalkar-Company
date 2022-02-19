@@ -136,6 +136,7 @@ export const Link = {
   textDecoration: "none",
   color: "var(--text-white)",
   backgroundColor: "var(--accent)",
+  letterSpacing: "1px",
   ...Mont24,
 
   "&:hover": {
@@ -144,4 +145,9 @@ export const Link = {
   "&:active": {
     backgroundColor: "var(--accent-active)",
   },
+};
+
+export const TextCSS = {
+  lineHeight: "1.5rem",
+  letterSpacing: "1px",
 };

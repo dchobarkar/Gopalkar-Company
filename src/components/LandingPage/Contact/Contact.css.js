@@ -11,7 +11,7 @@ const ContactCSS = {
     justifyContent: "center",
     alignItems: "center",
   },
-  header: { ...Lib32 },
+  header: { ...Lib32, letterSpacing: "1px" },
   container: {
     paddingTop: "1rem",
     display: "flex",

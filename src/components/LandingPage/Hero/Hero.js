@@ -14,15 +14,13 @@ function Hero() {
   return (
     <section className={classes.root}>
       <div className={classes.hero}>
-        <h1 className={classes.header}>Header</h1>
-
+        <h1 className={classes.header}>LET’S MAKE FINANCES SIMPLE</h1>
         <p className={classes.text}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper purus
-          ultricies donec odio est et. Dignissim non magnis quam velit augue
-          vitae urna. Hendrerit vivamus pellentesque venenatis risus nisl,
-          aliquet velit. At tristique luctus id urna, in eu ante.
+          We are a group of experts who specialize in providing financial
+          services to a wide range of businesses. We're here to walk you through
+          the full process of starting a business so you can concentrate on what
+          you do best.
         </p>
-
         <div>
           <Link className={classes.link} to="/contact">
             Hire Us

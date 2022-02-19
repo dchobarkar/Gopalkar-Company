@@ -1,4 +1,4 @@
-import { Lib32, Mont16, Padding, SectionHeight } from "../../../css";
+import { Lib32, Mont16, Padding, SectionHeight, TextCSS } from "../../../css";
 
 const TestinomialsCSS = {
   root: {
@@ -13,7 +13,7 @@ const TestinomialsCSS = {
     color: "var(--text-white)",
     backgroundColor: "var(--secondary)",
   },
-  header: { ...Lib32 },
+  header: { ...Lib32, letterSpacing: "1px" },
   container: {
     paddingTop: "2rem",
     display: "flex",
@@ -34,10 +34,12 @@ const TestinomialsCSS = {
   },
   text: {
     paddingBottom: "0.5rem",
+    ...TextCSS,
   },
   name: {
     textAlign: "right",
     ...Mont16,
+    ...TextCSS,
     color: "var(--text-gray)",
   },
 

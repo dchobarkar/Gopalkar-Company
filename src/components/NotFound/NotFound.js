@@ -23,10 +23,11 @@ function NotFound() {
       <h2 className={classes.header}>404 Page Not Found</h2>
 
       <p className={classes.text}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
-        ultrices nulla lorem bibendum eros tellus volutpat. Facilisi quis morbi
-        quam pulvinar lorem rhoncus. Euismod lectus aliquam massa tempor
-        fermentum. Tellus cursus natoque maecenas eget a ac facilisis.
+        These are uncharted territory
+        <br />
+        Looking to explore?
+        <br />
+        Start from homepage
       </p>
 
       <Link className={classes.link} to="/">

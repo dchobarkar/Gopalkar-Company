@@ -1,4 +1,4 @@
-import { Lib32, Padding, SectionHeight } from "../../css";
+import { Lib32, Padding, SectionHeight, TextCSS } from "../../css";
 import Image from "../../assets/img/gopalkar-and-company-about.jpg";
 
 const AboutCSS = {
@@ -13,7 +13,7 @@ const AboutCSS = {
   },
   image: {
     width: "30%",
-    height: "100vh",
+    height: "1500px",
     display: "none",
     backgroundImage: `url(${Image})`,
     backgroundPosition: "center",
@@ -29,10 +29,12 @@ const AboutCSS = {
   header: {
     padding: "1rem 0",
     ...Lib32,
+    letterSpacing: "1px",
     color: "var(--accent)",
   },
   text: {
     paddingBottom: "2rem",
+    ...TextCSS,
   },
 
   /* Tablet view */

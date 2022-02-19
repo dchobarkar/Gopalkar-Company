@@ -1,4 +1,4 @@
-import { Lib24, Link, Padding } from "../../css";
+import { Lib24, Link, Padding, TextCSS } from "../../css";
 
 const NotFoundCSS = {
   root: {
@@ -17,9 +17,11 @@ const NotFoundCSS = {
     maxHeight: "400px",
     maxWidth: "400px",
   },
-  header: { ...Lib24 },
+  header: { ...Lib24, letterSpacing: "1px" },
   text: {
     padding: "2rem 0",
+    ...TextCSS,
+    textAlign: "center",
   },
   link: { ...Link },
 

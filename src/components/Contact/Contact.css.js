@@ -1,4 +1,4 @@
-import { Lib32, Mont16, Padding, SectionHeight } from "../../css";
+import { Lib32, Mont16, Padding, SectionHeight, TextCSS } from "../../css";
 
 const ContactCSS = {
   root: {
@@ -16,14 +16,19 @@ const ContactCSS = {
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    "& h2": { ...Lib32 },
+    "& h2": {
+      ...Lib32,
+      letterSpacing: "1px",
+      textAlign: "center",
+    },
     "& p": {
       paddingTop: "2rem",
+      ...TextCSS,
     },
   },
   mediaIcons: {
     width: "100%",
-    padding: "1rem 0 2rem 0",
+    padding: "2rem 0 0 0",
     display: "flex",
     justifyContent: "space-around",
     alignItems: "center",
@@ -51,6 +56,7 @@ const ContactCSS = {
     justifyContent: "space-around",
     alignItems: "center",
     ...Mont16,
+    ...TextCSS,
     "& input,input:focus,textarea": {
       width: "100%",
       margin: "0.5rem 0",

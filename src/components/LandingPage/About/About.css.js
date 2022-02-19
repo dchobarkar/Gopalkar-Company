@@ -1,4 +1,4 @@
-import { Lib32, Link, Padding, SectionHeight } from "../../../css";
+import { Lib32, Link, Padding, SectionHeight, TextCSS } from "../../../css";
 
 const AboutCSS = {
   root: {
@@ -11,8 +11,11 @@ const AboutCSS = {
     justifyContent: "center",
     alignItems: "center",
   },
-  header: { ...Lib32 },
-  text: { padding: "1rem" },
+  header: { ...Lib32, letterSpacing: "1px" },
+  text: {
+    padding: "2rem 0",
+    ...TextCSS,
+  },
   link: { ...Link },
 
   /* Tablet view */
@@ -23,7 +26,7 @@ const AboutCSS = {
       justifyContent: "space-around",
     },
     text: {
-      maxWidth: "80vw",
+      maxWidth: "60vw",
     },
   },
 
@@ -35,7 +38,7 @@ const AboutCSS = {
       justifyContent: "space-around",
     },
     text: {
-      maxWidth: "50vw",
+      maxWidth: "40vw",
     },
   },
 };
