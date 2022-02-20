@@ -16,6 +16,11 @@ function Services() {
     <div className={classes.root}>
       <Helmet>
         <title>Accounting and Advisory Services</title>
+
+        <meta
+          name="description"
+          content="Gopalkar & Company's comprehensive suite of advisory services provides business owners with on-demand resources to grow their business."
+        />
       </Helmet>
 
       <div className={classes.header}>

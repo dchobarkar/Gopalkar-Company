@@ -17,6 +17,11 @@ function BlogList() {
     <div className={classes.root}>
       <Helmet>
         <title>Gopalkar & Company Blog</title>
+
+        <meta
+          name="description"
+          content="Gopalkar & Company's blog provides you insights on latest financial, economical, corporate related updates."
+        />
       </Helmet>
 
       <section className={classes.container}>

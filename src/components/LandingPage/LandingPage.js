@@ -21,6 +21,11 @@ function LandingPage() {
     <div className={classes.root}>
       <Helmet>
         <title>Gopalkar & Company | CA in Pune</title>
+
+        <meta
+          name="description"
+          content="Gopalkar & Company is a Chartered Accountant firm based in Pune that provides auditing and accounting services."
+        />
       </Helmet>
 
       <Hero />

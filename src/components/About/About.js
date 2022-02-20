@@ -15,6 +15,11 @@ function About() {
     <React.Fragment>
       <Helmet>
         <title>Best CA Firm - About</title>
+
+        <meta
+          name="description"
+          content="Gopalkar & Company is a rapidly expanding chartered accounting business that was founded in 2021. We endeavour to give our clients the highest level of professionalism and ethics in order to help them expand their businesses effectively."
+        />
       </Helmet>
       <div className={classes.root}>
         <div className={classes.image}></div>

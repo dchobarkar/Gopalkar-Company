@@ -23,6 +23,11 @@ function Contact() {
     <div className={classes.root}>
       <Helmet>
         <title>Contact - Gopalkar & Company</title>
+
+        <meta
+          name="description"
+          content="We are here to help. If you have a question or would like to speak to one of our team members, submit your inquiry below and we'll be in touch shortly."
+        />
       </Helmet>
 
       <div className={classes.text}>
