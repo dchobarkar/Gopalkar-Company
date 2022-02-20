@@ -10,6 +10,7 @@ const AboutCSS = {
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "var(--text-gray)",
   },
   header: { ...Lib32, letterSpacing: "1px" },
   text: {

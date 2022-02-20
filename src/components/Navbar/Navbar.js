@@ -38,7 +38,7 @@ function Navbar() {
       <ul className={isOpen ? clsx(classes.menu, classes.open) : classes.menu}>
         <NavLink to="/services" label="Services" onClick={closeMobileMenu} />
 
-        <NavLink to="/blog-list" label="Blog" onClick={closeMobileMenu} />
+        {/* <NavLink to="/blog-list" label="Blog" onClick={closeMobileMenu} /> */}
 
         <NavLink to="/about" label="About" onClick={closeMobileMenu} />
 

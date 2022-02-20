@@ -34,7 +34,7 @@ function LandingPage() {
 
       <About />
 
-      <Testinomials />
+      {/* <Testinomials /> */}
 
       <Contact />
     </div>
