@@ -1,7 +1,8 @@
 import React from "react";
-import { makeStyles } from "@material-ui/styles";
 import { useForm } from "@formspree/react";
 import clsx from "clsx";
+import { Helmet } from "react-helmet";
+import { makeStyles } from "@material-ui/styles";
 
 import { ReactComponent as EmailIcon } from "../../assets/svg/email.svg";
 import { ReactComponent as LinkedInIcon } from "../../assets/svg/linkedin.svg";
@@ -20,6 +21,10 @@ function Contact() {
 
   return (
     <div className={classes.root}>
+      <Helmet>
+        <title>Contact - Gopalkar & Company</title>
+      </Helmet>
+
       <div className={classes.text}>
         <h2>Gopalkar & Company Help Desk</h2>
 

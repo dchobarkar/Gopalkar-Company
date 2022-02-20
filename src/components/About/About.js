@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { makeStyles } from "@material-ui/styles";
 
 import AboutCSS from "./About.css";
@@ -12,6 +13,9 @@ function About() {
 
   return (
     <React.Fragment>
+      <Helmet>
+        <title>Best CA Firm - About</title>
+      </Helmet>
       <div className={classes.root}>
         <div className={classes.image}></div>
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { makeStyles } from "@material-ui/styles";
 
 import Hero from "./Hero/Hero";
@@ -18,6 +19,10 @@ function LandingPage() {
 
   return (
     <div className={classes.root}>
+      <Helmet>
+        <title>Gopalkar & Company | CA in Pune</title>
+      </Helmet>
+
       <Hero />
 
       <Services />

@@ -1,6 +1,7 @@
 import React from "react";
-import { makeStyles } from "@material-ui/styles";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+import { makeStyles } from "@material-ui/styles";
 
 import GIF from "../../assets/img/gopalkar-and-company-page-not-found.gif";
 import NotFoundCSS from "./NotFound.css";
@@ -14,6 +15,10 @@ function NotFound() {
 
   return (
     <div className={classes.root}>
+      <Helmet>
+        <title>Page Not Found - Gopalkar & Company</title>
+      </Helmet>
+
       <img
         className={classes.image}
         alt="gopalkar-and-company-page-not-found"

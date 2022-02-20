@@ -1,6 +1,7 @@
 import React from "react";
-import { makeStyles } from "@material-ui/styles";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+import { makeStyles } from "@material-ui/styles";
 
 import Author from "../../assets/img/gopalkar-and-company-chetan.png";
 import BlogListCSS from "./BlogList.css";
@@ -14,6 +15,10 @@ function BlogList() {
 
   return (
     <div className={classes.root}>
+      <Helmet>
+        <title>Gopalkar & Company Blog</title>
+      </Helmet>
+
       <section className={classes.container}>
         <h2 className={classes.header}>Header</h2>
 

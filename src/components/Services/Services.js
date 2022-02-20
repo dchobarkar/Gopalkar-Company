@@ -1,6 +1,7 @@
 import React from "react";
-import { makeStyles } from "@material-ui/styles";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+import { makeStyles } from "@material-ui/styles";
 
 import ServicesCSS from "./Services.css";
 
@@ -13,6 +14,10 @@ function Services() {
 
   return (
     <div className={classes.root}>
+      <Helmet>
+        <title>Accounting and Advisory Services</title>
+      </Helmet>
+
       <div className={classes.header}>
         <h1>What can we do to assist you?</h1>
 
