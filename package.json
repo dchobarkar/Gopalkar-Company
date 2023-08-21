@@ -1,7 +1,10 @@
 {
   "homepage": "https://dchobarkar.github.io/Gopalkar-and-Company/",
-  "name": "gopalkarandcompany",
+  "name": "gopalkar-and-company",
+  "description": "official website of Gopalkar and Company",
   "version": "1.0.0",
+  "author": "Darshan Chobarkar <contact@darshanwebdev.com> (https://darshanwebdev.com)",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@formspree/react": "^2.2.4",
